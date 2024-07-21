@@ -13,6 +13,8 @@
 		BA32FB142C4CC4880065798F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32FB132C4CC4880065798F /* ViewController.swift */; };
 		BA32FB192C4CC4890065798F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA32FB182C4CC4890065798F /* Assets.xcassets */; };
 		BA32FB1C2C4CC4890065798F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA32FB1A2C4CC4890065798F /* LaunchScreen.storyboard */; };
+		BAAD88492C4CCADC00D2F467 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BAAD88482C4CCADC00D2F467 /* .swiftlint.yml */; };
+		BAAD884C2C4CCBE600D2F467 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD884B2C4CCBE600D2F467 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		BA32FB182C4CC4890065798F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA32FB1B2C4CC4890065798F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA32FB1D2C4CC4890065798F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAAD88482C4CCADC00D2F467 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		BAAD884B2C4CCBE600D2F467 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		FC7B3A3B0B380F84DC58D72A /* Pods_PawgleiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawgleiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -46,13 +50,14 @@
 				AD140DDF21049CAD2358EF55 /* Pods-PawgleiOS.debug.xcconfig */,
 				76A18A673E9C6FEDA2395C89 /* Pods-PawgleiOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		BA32FB032C4CC4880065798F = {
 			isa = PBXGroup;
 			children = (
+				BAAD884B2C4CCBE600D2F467 /* R.generated.swift */,
+				BAAD88482C4CCADC00D2F467 /* .swiftlint.yml */,
 				BA32FB0E2C4CC4880065798F /* PawgleiOS */,
 				BA32FB0D2C4CC4880065798F /* Products */,
 				372FB151A55AED498D5D5753 /* Pods */,
@@ -97,6 +102,8 @@
 			buildConfigurationList = BA32FB202C4CC4890065798F /* Build configuration list for PBXNativeTarget "PawgleiOS" */;
 			buildPhases = (
 				A4EA469BBA3D1E2A89CD30FC /* [CP] Check Pods Manifest.lock */,
+				BAAD884A2C4CCB1F00D2F467 /* R.swift */,
+				BA32FB232C4CC9570065798F /* SwiftLint */,
 				BA32FB082C4CC4880065798F /* Sources */,
 				BA32FB092C4CC4880065798F /* Frameworks */,
 				BA32FB0A2C4CC4880065798F /* Resources */,
@@ -149,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAAD88492C4CCADC00D2F467 /* .swiftlint.yml in Resources */,
 				BA32FB1C2C4CC4890065798F /* LaunchScreen.storyboard in Resources */,
 				BA32FB192C4CC4890065798F /* Assets.xcassets in Resources */,
 			);
@@ -196,6 +204,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BA32FB232C4CC9570065798F /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		BAAD884A2C4CCB1F00D2F467 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -206,6 +254,7 @@
 				BA32FB142C4CC4880065798F /* ViewController.swift in Sources */,
 				BA32FB102C4CC4880065798F /* AppDelegate.swift in Sources */,
 				BA32FB122C4CC4880065798F /* SceneDelegate.swift in Sources */,
+				BAAD884C2C4CCBE600D2F467 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +309,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -323,7 +372,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
