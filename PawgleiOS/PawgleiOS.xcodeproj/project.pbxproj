@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FDFAB0C95431EDF89416E89 /* Pods_PawgleiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7B3A3B0B380F84DC58D72A /* Pods_PawgleiOS.framework */; };
 		BA32FB102C4CC4880065798F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32FB0F2C4CC4880065798F /* AppDelegate.swift */; };
 		BA32FB122C4CC4880065798F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32FB112C4CC4880065798F /* SceneDelegate.swift */; };
 		BA32FB142C4CC4880065798F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32FB132C4CC4880065798F /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76A18A673E9C6FEDA2395C89 /* Pods-PawgleiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawgleiOS.release.xcconfig"; path = "Target Support Files/Pods-PawgleiOS/Pods-PawgleiOS.release.xcconfig"; sourceTree = "<group>"; };
+		AD140DDF21049CAD2358EF55 /* Pods-PawgleiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawgleiOS.debug.xcconfig"; path = "Target Support Files/Pods-PawgleiOS/Pods-PawgleiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BA32FB0C2C4CC4880065798F /* PawgleiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PawgleiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA32FB0F2C4CC4880065798F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA32FB112C4CC4880065798F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		BA32FB182C4CC4890065798F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA32FB1B2C4CC4890065798F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA32FB1D2C4CC4890065798F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC7B3A3B0B380F84DC58D72A /* Pods_PawgleiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawgleiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FDFAB0C95431EDF89416E89 /* Pods_PawgleiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		372FB151A55AED498D5D5753 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD140DDF21049CAD2358EF55 /* Pods-PawgleiOS.debug.xcconfig */,
+				76A18A673E9C6FEDA2395C89 /* Pods-PawgleiOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BA32FB032C4CC4880065798F = {
 			isa = PBXGroup;
 			children = (
 				BA32FB0E2C4CC4880065798F /* PawgleiOS */,
 				BA32FB0D2C4CC4880065798F /* Products */,
+				372FB151A55AED498D5D5753 /* Pods */,
+				E088141C11B40A7086BEFA2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = PawgleiOS;
 			sourceTree = "<group>";
 		};
+		E088141C11B40A7086BEFA2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC7B3A3B0B380F84DC58D72A /* Pods_PawgleiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA32FB202C4CC4890065798F /* Build configuration list for PBXNativeTarget "PawgleiOS" */;
 			buildPhases = (
+				A4EA469BBA3D1E2A89CD30FC /* [CP] Check Pods Manifest.lock */,
 				BA32FB082C4CC4880065798F /* Sources */,
 				BA32FB092C4CC4880065798F /* Frameworks */,
 				BA32FB0A2C4CC4880065798F /* Resources */,
+				63676821B3E90386426C0C89 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,6 +155,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63676821B3E90386426C0C89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PawgleiOS/Pods-PawgleiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PawgleiOS/Pods-PawgleiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PawgleiOS/Pods-PawgleiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4EA469BBA3D1E2A89CD30FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PawgleiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA32FB082C4CC4880065798F /* Sources */ = {
@@ -275,6 +344,7 @@
 		};
 		BA32FB212C4CC4890065798F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD140DDF21049CAD2358EF55 /* Pods-PawgleiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -307,6 +377,7 @@
 		};
 		BA32FB222C4CC4890065798F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76A18A673E9C6FEDA2395C89 /* Pods-PawgleiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
