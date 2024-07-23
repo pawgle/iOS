@@ -10,5 +10,8 @@ target 'PawgleiOS' do
   pod 'R.swift'
   pod 'SwiftLint'
   pod 'SnapKit'
+  pod 'Kingfisher'
+  pod 'RxRelay'
+  pod 'Alamofire'
 
 end
