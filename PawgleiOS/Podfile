@@ -7,6 +7,9 @@ target 'PawgleiOS' do
 
   # Pods for PawgleiOS
   pod 'RxSwift'
+  pod 'RxRelay'
+  pod 'Alamofire'
+  pod 'Kingfisher'
   pod 'R.swift'
   pod 'SwiftLint'
   pod 'SnapKit'
