@@ -10,6 +10,7 @@
 		129DF20B2C50C54700F0ED34 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DF20A2C50C54700F0ED34 /* ViewModelType.swift */; };
 		129DF20E2C50C56100F0ED34 /* RepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DF20D2C50C56100F0ED34 /* RepositoryType.swift */; };
 		129DF2102C50C68400F0ED34 /* ViewModelStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DF20F2C50C68400F0ED34 /* ViewModelStatus.swift */; };
+		129DF2132C50CE0400F0ED34 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DF2122C50CE0400F0ED34 /* BaseCoordinator.swift */; };
 		1FDFAB0C95431EDF89416E89 /* Pods_PawgleiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7B3A3B0B380F84DC58D72A /* Pods_PawgleiOS.framework */; };
 		BA32FB102C4CC4880065798F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32FB0F2C4CC4880065798F /* AppDelegate.swift */; };
 		BA32FB122C4CC4880065798F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32FB112C4CC4880065798F /* SceneDelegate.swift */; };
@@ -24,6 +25,7 @@
 		129DF20A2C50C54700F0ED34 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		129DF20D2C50C56100F0ED34 /* RepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryType.swift; sourceTree = "<group>"; };
 		129DF20F2C50C68400F0ED34 /* ViewModelStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelStatus.swift; sourceTree = "<group>"; };
+		129DF2122C50CE0400F0ED34 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		76A18A673E9C6FEDA2395C89 /* Pods-PawgleiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawgleiOS.release.xcconfig"; path = "Target Support Files/Pods-PawgleiOS/Pods-PawgleiOS.release.xcconfig"; sourceTree = "<group>"; };
 		AD140DDF21049CAD2358EF55 /* Pods-PawgleiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawgleiOS.debug.xcconfig"; path = "Target Support Files/Pods-PawgleiOS/Pods-PawgleiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BA32FB0C2C4CC4880065798F /* PawgleiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PawgleiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		129DF2112C50CDF200F0ED34 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				129DF2122C50CE0400F0ED34 /* BaseCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		372FB151A55AED498D5D5753 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		BA32FB0E2C4CC4880065798F /* PawgleiOS */ = {
 			isa = PBXGroup;
 			children = (
+				129DF2112C50CDF200F0ED34 /* Coordinator */,
 				129DF20C2C50C55800F0ED34 /* Service */,
 				129DF2092C50C53E00F0ED34 /* ViewModel */,
 				BA32FB0F2C4CC4880065798F /* AppDelegate.swift */,
@@ -283,6 +294,7 @@
 				129DF2102C50C68400F0ED34 /* ViewModelStatus.swift in Sources */,
 				129DF20B2C50C54700F0ED34 /* ViewModelType.swift in Sources */,
 				BAAD884C2C4CCBE600D2F467 /* R.generated.swift in Sources */,
+				129DF2132C50CE0400F0ED34 /* BaseCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
