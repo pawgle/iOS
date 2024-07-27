@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class BaseCoordinator {
+class BaseCoordinator: NSObject {
     let identifier = UUID()
     var childCoordinators = [UUID: BaseCoordinator]()
     
