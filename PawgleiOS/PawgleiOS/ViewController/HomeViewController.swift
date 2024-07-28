@@ -9,10 +9,9 @@ import UIKit
 import RxSwift
 import RxRelay
 
-class HomeViewController: UIViewController,
-                          ViewModelBindable {
+final class HomeViewController: UIViewController,
+                                ViewModelBindable {
   
-
     typealias ViewModelType = HomeViewModel
     var viewModel: HomeViewModel!
     var disposeBag = DisposeBag()
@@ -28,4 +27,3 @@ class HomeViewController: UIViewController,
         
     }
 }
-

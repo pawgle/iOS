@@ -14,7 +14,7 @@ enum SplashCoordinatorResult {
     case pop
 }
 
-class SplashCoordinator: ReactiveCoordinator<SplashCoordinatorResult>,
+final class SplashCoordinator: ReactiveCoordinator<SplashCoordinatorResult>,
                                CoordinatorTransitable {
     
     override func start(_ type: CoordinatorTransitionType) -> Observable<SplashCoordinatorResult> {

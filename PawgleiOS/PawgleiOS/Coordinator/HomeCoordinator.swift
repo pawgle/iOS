@@ -21,6 +21,8 @@ final class HomeCoordinator: ReactiveCoordinator<Void>,
                         type: .push,
                         animated: false)
         
+        AppCoordinator.shared.viewController = viewController
+        
         return Observable.empty()
     }
 }

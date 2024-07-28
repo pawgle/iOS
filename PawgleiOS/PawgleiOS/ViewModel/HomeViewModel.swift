@@ -29,7 +29,6 @@ final class HomeViewModel: ViewModelType {
     
     lazy var coordinate: Coordinate = Coordinate(close: PublishRelay<Void>())
     
-   
     func transform(_ input: Input) -> Output {
         
         return Output()
