@@ -26,13 +26,12 @@ class SplashCoordinator: ReactiveCoordinator<SplashCoordinatorResult>,
        
         let goHome = viewModel.coordinate.goHome.map { SplashCoordinatorResult.goHome }
         
-        let interaction = self.transition(to: viewController,
-                                       navigationController: navigationController,
-                                       type: .push,
-                                       animated: false)
-            .map { SplashCoordinatorResult.pop }
+        self.transition(to: viewController,
+                        navigationController: navigationController,
+                        type: .push,
+                        animated: false)
         
-        return Observable.merge(goHome, interaction)
+        return Observable.merge(goHome)
             .take(1)
             .do { [weak self] _ in
                 self?.targetPop(viewController, afterDelay: 0.5)
