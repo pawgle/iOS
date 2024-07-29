@@ -27,6 +27,8 @@
 		129DF24C2C5613B500F0ED34 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DF24B2C5613B500F0ED34 /* HomeCoordinator.swift */; };
 		129DF24E2C5613DA00F0ED34 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DF24D2C5613DA00F0ED34 /* HomeViewModel.swift */; };
 		1FDFAB0C95431EDF89416E89 /* Pods_PawgleiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7B3A3B0B380F84DC58D72A /* Pods_PawgleiOS.framework */; };
+		BA2786712C576AE700009FC1 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2786702C576AE700009FC1 /* Color.xcassets */; };
+		BA2786732C576AF600009FC1 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2786722C576AF600009FC1 /* Image.xcassets */; };
 		BA32FB102C4CC4880065798F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32FB0F2C4CC4880065798F /* AppDelegate.swift */; };
 		BA32FB122C4CC4880065798F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32FB112C4CC4880065798F /* SceneDelegate.swift */; };
 		BA32FB142C4CC4880065798F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32FB132C4CC4880065798F /* HomeViewController.swift */; };
@@ -58,6 +60,8 @@
 		129DF24D2C5613DA00F0ED34 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		76A18A673E9C6FEDA2395C89 /* Pods-PawgleiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawgleiOS.release.xcconfig"; path = "Target Support Files/Pods-PawgleiOS/Pods-PawgleiOS.release.xcconfig"; sourceTree = "<group>"; };
 		AD140DDF21049CAD2358EF55 /* Pods-PawgleiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawgleiOS.debug.xcconfig"; path = "Target Support Files/Pods-PawgleiOS/Pods-PawgleiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BA2786702C576AE700009FC1 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		BA2786722C576AF600009FC1 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		BA32FB0C2C4CC4880065798F /* PawgleiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PawgleiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA32FB0F2C4CC4880065798F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA32FB112C4CC4880065798F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +182,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BA27866F2C576AC700009FC1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA32FB182C4CC4890065798F /* Assets.xcassets */,
+				BA2786702C576AE700009FC1 /* Color.xcassets */,
+				BA2786722C576AF600009FC1 /* Image.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		BA32FB032C4CC4880065798F = {
 			isa = PBXGroup;
 			children = (
@@ -206,9 +220,9 @@
 				129DF20C2C50C55800F0ED34 /* Repository */,
 				129DF2092C50C53E00F0ED34 /* ViewModel */,
 				129DF2352C55114A00F0ED34 /* ViewController */,
+				BA27866F2C576AC700009FC1 /* Resources */,
 				BA32FB0F2C4CC4880065798F /* AppDelegate.swift */,
 				BA32FB112C4CC4880065798F /* SceneDelegate.swift */,
-				BA32FB182C4CC4890065798F /* Assets.xcassets */,
 				BA32FB1A2C4CC4890065798F /* LaunchScreen.storyboard */,
 				BA32FB1D2C4CC4890065798F /* Info.plist */,
 			);
@@ -286,6 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAAD88492C4CCADC00D2F467 /* .swiftlint.yml in Resources */,
+				BA2786712C576AE700009FC1 /* Color.xcassets in Resources */,
+				BA2786732C576AF600009FC1 /* Image.xcassets in Resources */,
 				BA32FB1C2C4CC4890065798F /* LaunchScreen.storyboard in Resources */,
 				BA32FB192C4CC4890065798F /* Assets.xcassets in Resources */,
 			);

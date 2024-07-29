@@ -37,12 +37,75 @@ struct _R {
     let developmentRegion = "en"
   }
 
-  /// This `_R.color` struct is generated, and contains static references to 1 colors.
+  /// This `_R.color` struct is generated, and contains static references to 22 colors.
   struct color {
     let bundle: Foundation.Bundle
 
     /// Color `AccentColor`.
     var accentColor: RswiftResources.ColorResource { .init(name: "AccentColor", path: [], bundle: bundle) }
+
+    /// Color `black`.
+    var black: RswiftResources.ColorResource { .init(name: "black", path: [], bundle: bundle) }
+
+    /// Color `gray-100`.
+    var gray100: RswiftResources.ColorResource { .init(name: "gray-100", path: [], bundle: bundle) }
+
+    /// Color `gray-200`.
+    var gray200: RswiftResources.ColorResource { .init(name: "gray-200", path: [], bundle: bundle) }
+
+    /// Color `gray-300`.
+    var gray300: RswiftResources.ColorResource { .init(name: "gray-300", path: [], bundle: bundle) }
+
+    /// Color `gray-400`.
+    var gray400: RswiftResources.ColorResource { .init(name: "gray-400", path: [], bundle: bundle) }
+
+    /// Color `gray-50`.
+    var gray50: RswiftResources.ColorResource { .init(name: "gray-50", path: [], bundle: bundle) }
+
+    /// Color `gray-500`.
+    var gray500: RswiftResources.ColorResource { .init(name: "gray-500", path: [], bundle: bundle) }
+
+    /// Color `gray-600`.
+    var gray600: RswiftResources.ColorResource { .init(name: "gray-600", path: [], bundle: bundle) }
+
+    /// Color `gray-700`.
+    var gray700: RswiftResources.ColorResource { .init(name: "gray-700", path: [], bundle: bundle) }
+
+    /// Color `gray-800`.
+    var gray800: RswiftResources.ColorResource { .init(name: "gray-800", path: [], bundle: bundle) }
+
+    /// Color `gray-900`.
+    var gray900: RswiftResources.ColorResource { .init(name: "gray-900", path: [], bundle: bundle) }
+
+    /// Color `orange-100`.
+    var orange100: RswiftResources.ColorResource { .init(name: "orange-100", path: [], bundle: bundle) }
+
+    /// Color `orange-200`.
+    var orange200: RswiftResources.ColorResource { .init(name: "orange-200", path: [], bundle: bundle) }
+
+    /// Color `orange-300`.
+    var orange300: RswiftResources.ColorResource { .init(name: "orange-300", path: [], bundle: bundle) }
+
+    /// Color `orange-400`.
+    var orange400: RswiftResources.ColorResource { .init(name: "orange-400", path: [], bundle: bundle) }
+
+    /// Color `orange-500`.
+    var orange500: RswiftResources.ColorResource { .init(name: "orange-500", path: [], bundle: bundle) }
+
+    /// Color `pointBlue`.
+    var pointBlue: RswiftResources.ColorResource { .init(name: "pointBlue", path: [], bundle: bundle) }
+
+    /// Color `pointYellow`.
+    var pointYellow: RswiftResources.ColorResource { .init(name: "pointYellow", path: [], bundle: bundle) }
+
+    /// Color `red-100`.
+    var red100: RswiftResources.ColorResource { .init(name: "red-100", path: [], bundle: bundle) }
+
+    /// Color `red-200`.
+    var red200: RswiftResources.ColorResource { .init(name: "red-200", path: [], bundle: bundle) }
+
+    /// Color `white`.
+    var white: RswiftResources.ColorResource { .init(name: "white", path: [], bundle: bundle) }
   }
 
   /// This `_R.info` struct is generated, and contains static references to 1 properties.
