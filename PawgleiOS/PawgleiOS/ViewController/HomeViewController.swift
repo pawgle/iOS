@@ -16,11 +16,26 @@ final class HomeViewController: UIViewController,
     var viewModel: HomeViewModel!
     var disposeBag = DisposeBag()
     
+    private var imageView: UIImageView = {
+        let iv = UIImageView()
+        iv.image = R.image.award()
+        return iv
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red200
+        view.addSubview(imageView)
         
         print("\(self) - \(#function)")
+    }
+    
+    override func viewDidLayoutSubviews() {
+        imageView.frame = CGRect(
+            x: (view.frame.size.width - 24) / 2,
+            y: (view.frame.size.height - 24) / 2,
+            width: 24,
+            height: 24)
     }
     
     func bindViewModel() {

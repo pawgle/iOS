@@ -13,11 +13,15 @@ let R = _R(bundle: Bundle(for: BundleFinder.self))
 struct _R {
   let bundle: Foundation.Bundle
   var color: color { .init(bundle: bundle) }
+  var image: image { .init(bundle: bundle) }
   var info: info { .init(bundle: bundle) }
   var file: file { .init(bundle: bundle) }
   var storyboard: storyboard { .init(bundle: bundle) }
 
   func color(bundle: Foundation.Bundle) -> color {
+    .init(bundle: bundle)
+  }
+  func image(bundle: Foundation.Bundle) -> image {
     .init(bundle: bundle)
   }
   func info(bundle: Foundation.Bundle) -> info {
@@ -106,6 +110,83 @@ struct _R {
 
     /// Color `white`.
     var white: RswiftResources.ColorResource { .init(name: "white", path: [], bundle: bundle) }
+  }
+
+  /// This `_R.image` struct is generated, and contains static references to 24 images.
+  struct image {
+    let bundle: Foundation.Bundle
+
+    /// Image `award`.
+    var award: RswiftResources.ImageResource { .init(name: "award", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `ball`.
+    var ball: RswiftResources.ImageResource { .init(name: "ball", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `bird-cage`.
+    var birdCage: RswiftResources.ImageResource { .init(name: "bird-cage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `bone`.
+    var bone: RswiftResources.ImageResource { .init(name: "bone", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `book-open`.
+    var bookOpen: RswiftResources.ImageResource { .init(name: "book-open", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `briefcase`.
+    var briefcase: RswiftResources.ImageResource { .init(name: "briefcase", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `check`.
+    var check: RswiftResources.ImageResource { .init(name: "check", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `chevron-right`.
+    var chevronRight: RswiftResources.ImageResource { .init(name: "chevron-right", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `clipboard`.
+    var clipboard: RswiftResources.ImageResource { .init(name: "clipboard", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `database`.
+    var database: RswiftResources.ImageResource { .init(name: "database", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `fish`.
+    var fish: RswiftResources.ImageResource { .init(name: "fish", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `gift`.
+    var gift: RswiftResources.ImageResource { .init(name: "gift", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `hash`.
+    var hash: RswiftResources.ImageResource { .init(name: "hash", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `heart`.
+    var heart: RswiftResources.ImageResource { .init(name: "heart", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `message-circle`.
+    var messageCircle: RswiftResources.ImageResource { .init(name: "message-circle", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `message-square`.
+    var messageSquare: RswiftResources.ImageResource { .init(name: "message-square", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `pet-collar`.
+    var petCollar: RswiftResources.ImageResource { .init(name: "pet-collar", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `pet-food`.
+    var petFood: RswiftResources.ImageResource { .init(name: "pet-food", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `pocket20`.
+    var pocket20: RswiftResources.ImageResource { .init(name: "pocket20", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `pocket20-1`.
+    var pocket201: RswiftResources.ImageResource { .init(name: "pocket20-1", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `pocket24`.
+    var pocket24: RswiftResources.ImageResource { .init(name: "pocket24", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `smile`.
+    var smile: RswiftResources.ImageResource { .init(name: "smile", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `user20`.
+    var user20: RswiftResources.ImageResource { .init(name: "user20", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `user24`.
+    var user24: RswiftResources.ImageResource { .init(name: "user24", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
   }
 
   /// This `_R.info` struct is generated, and contains static references to 1 properties.
