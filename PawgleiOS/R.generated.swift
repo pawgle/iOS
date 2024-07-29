@@ -13,14 +13,22 @@ let R = _R(bundle: Bundle(for: BundleFinder.self))
 struct _R {
   let bundle: Foundation.Bundle
   var color: color { .init(bundle: bundle) }
+  var image: image { .init(bundle: bundle) }
   var info: info { .init(bundle: bundle) }
+  var font: font { .init(bundle: bundle) }
   var file: file { .init(bundle: bundle) }
   var storyboard: storyboard { .init(bundle: bundle) }
 
   func color(bundle: Foundation.Bundle) -> color {
     .init(bundle: bundle)
   }
+  func image(bundle: Foundation.Bundle) -> image {
+    .init(bundle: bundle)
+  }
   func info(bundle: Foundation.Bundle) -> info {
+    .init(bundle: bundle)
+  }
+  func font(bundle: Foundation.Bundle) -> font {
     .init(bundle: bundle)
   }
   func file(bundle: Foundation.Bundle) -> file {
@@ -30,6 +38,7 @@ struct _R {
     .init(bundle: bundle)
   }
   func validate() throws {
+    try self.font.validate()
     try self.storyboard.validate()
   }
 
@@ -37,12 +46,152 @@ struct _R {
     let developmentRegion = "en"
   }
 
-  /// This `_R.color` struct is generated, and contains static references to 1 colors.
+  /// This `_R.color` struct is generated, and contains static references to 22 colors.
   struct color {
     let bundle: Foundation.Bundle
 
     /// Color `AccentColor`.
     var accentColor: RswiftResources.ColorResource { .init(name: "AccentColor", path: [], bundle: bundle) }
+
+    /// Color `black`.
+    var black: RswiftResources.ColorResource { .init(name: "black", path: [], bundle: bundle) }
+
+    /// Color `gray-100`.
+    var gray100: RswiftResources.ColorResource { .init(name: "gray-100", path: [], bundle: bundle) }
+
+    /// Color `gray-200`.
+    var gray200: RswiftResources.ColorResource { .init(name: "gray-200", path: [], bundle: bundle) }
+
+    /// Color `gray-300`.
+    var gray300: RswiftResources.ColorResource { .init(name: "gray-300", path: [], bundle: bundle) }
+
+    /// Color `gray-400`.
+    var gray400: RswiftResources.ColorResource { .init(name: "gray-400", path: [], bundle: bundle) }
+
+    /// Color `gray-50`.
+    var gray50: RswiftResources.ColorResource { .init(name: "gray-50", path: [], bundle: bundle) }
+
+    /// Color `gray-500`.
+    var gray500: RswiftResources.ColorResource { .init(name: "gray-500", path: [], bundle: bundle) }
+
+    /// Color `gray-600`.
+    var gray600: RswiftResources.ColorResource { .init(name: "gray-600", path: [], bundle: bundle) }
+
+    /// Color `gray-700`.
+    var gray700: RswiftResources.ColorResource { .init(name: "gray-700", path: [], bundle: bundle) }
+
+    /// Color `gray-800`.
+    var gray800: RswiftResources.ColorResource { .init(name: "gray-800", path: [], bundle: bundle) }
+
+    /// Color `gray-900`.
+    var gray900: RswiftResources.ColorResource { .init(name: "gray-900", path: [], bundle: bundle) }
+
+    /// Color `orange-100`.
+    var orange100: RswiftResources.ColorResource { .init(name: "orange-100", path: [], bundle: bundle) }
+
+    /// Color `orange-200`.
+    var orange200: RswiftResources.ColorResource { .init(name: "orange-200", path: [], bundle: bundle) }
+
+    /// Color `orange-300`.
+    var orange300: RswiftResources.ColorResource { .init(name: "orange-300", path: [], bundle: bundle) }
+
+    /// Color `orange-400`.
+    var orange400: RswiftResources.ColorResource { .init(name: "orange-400", path: [], bundle: bundle) }
+
+    /// Color `orange-500`.
+    var orange500: RswiftResources.ColorResource { .init(name: "orange-500", path: [], bundle: bundle) }
+
+    /// Color `pointBlue`.
+    var pointBlue: RswiftResources.ColorResource { .init(name: "pointBlue", path: [], bundle: bundle) }
+
+    /// Color `pointYellow`.
+    var pointYellow: RswiftResources.ColorResource { .init(name: "pointYellow", path: [], bundle: bundle) }
+
+    /// Color `red-100`.
+    var red100: RswiftResources.ColorResource { .init(name: "red-100", path: [], bundle: bundle) }
+
+    /// Color `red-200`.
+    var red200: RswiftResources.ColorResource { .init(name: "red-200", path: [], bundle: bundle) }
+
+    /// Color `white`.
+    var white: RswiftResources.ColorResource { .init(name: "white", path: [], bundle: bundle) }
+  }
+
+  /// This `_R.image` struct is generated, and contains static references to 24 images.
+  struct image {
+    let bundle: Foundation.Bundle
+
+    /// Image `award`.
+    var award: RswiftResources.ImageResource { .init(name: "award", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `ball`.
+    var ball: RswiftResources.ImageResource { .init(name: "ball", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `bird-cage`.
+    var birdCage: RswiftResources.ImageResource { .init(name: "bird-cage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `bone`.
+    var bone: RswiftResources.ImageResource { .init(name: "bone", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `book-open`.
+    var bookOpen: RswiftResources.ImageResource { .init(name: "book-open", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `briefcase`.
+    var briefcase: RswiftResources.ImageResource { .init(name: "briefcase", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `check`.
+    var check: RswiftResources.ImageResource { .init(name: "check", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `chevron-right`.
+    var chevronRight: RswiftResources.ImageResource { .init(name: "chevron-right", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `clipboard`.
+    var clipboard: RswiftResources.ImageResource { .init(name: "clipboard", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `database`.
+    var database: RswiftResources.ImageResource { .init(name: "database", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `fish`.
+    var fish: RswiftResources.ImageResource { .init(name: "fish", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `gift`.
+    var gift: RswiftResources.ImageResource { .init(name: "gift", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `hash`.
+    var hash: RswiftResources.ImageResource { .init(name: "hash", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `heart`.
+    var heart: RswiftResources.ImageResource { .init(name: "heart", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `message-circle`.
+    var messageCircle: RswiftResources.ImageResource { .init(name: "message-circle", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `message-square`.
+    var messageSquare: RswiftResources.ImageResource { .init(name: "message-square", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `pet-collar`.
+    var petCollar: RswiftResources.ImageResource { .init(name: "pet-collar", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `pet-food`.
+    var petFood: RswiftResources.ImageResource { .init(name: "pet-food", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `pocket20`.
+    var pocket20: RswiftResources.ImageResource { .init(name: "pocket20", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `pocket20-1`.
+    var pocket201: RswiftResources.ImageResource { .init(name: "pocket20-1", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `pocket24`.
+    var pocket24: RswiftResources.ImageResource { .init(name: "pocket24", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `smile`.
+    var smile: RswiftResources.ImageResource { .init(name: "smile", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `user20`.
+    var user20: RswiftResources.ImageResource { .init(name: "user20", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `user24`.
+    var user24: RswiftResources.ImageResource { .init(name: "user24", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
   }
 
   /// This `_R.info` struct is generated, and contains static references to 1 properties.
@@ -93,12 +242,50 @@ struct _R {
     }
   }
 
-  /// This `_R.file` struct is generated, and contains static references to 1 resource files.
+  /// This `_R.font` struct is generated, and contains static references to 4 fonts.
+  struct font: Sequence {
+    let bundle: Foundation.Bundle
+
+    /// Font `Pretendard-Bold`.
+    var pretendardBold: RswiftResources.FontResource { .init(name: "Pretendard-Bold", bundle: bundle, filename: "Pretendard-Bold.otf") }
+
+    /// Font `Pretendard-Medium`.
+    var pretendardMedium: RswiftResources.FontResource { .init(name: "Pretendard-Medium", bundle: bundle, filename: "Pretendard-Medium.otf") }
+
+    /// Font `Pretendard-Regular`.
+    var pretendardRegular: RswiftResources.FontResource { .init(name: "Pretendard-Regular", bundle: bundle, filename: "Pretendard-Regular.otf") }
+
+    /// Font `Pretendard-SemiBold`.
+    var pretendardSemiBold: RswiftResources.FontResource { .init(name: "Pretendard-SemiBold", bundle: bundle, filename: "Pretendard-SemiBold.otf") }
+
+    func makeIterator() -> IndexingIterator<[RswiftResources.FontResource]> {
+      [pretendardBold, pretendardMedium, pretendardRegular, pretendardSemiBold].makeIterator()
+    }
+    func validate() throws {
+      for font in self {
+        if !font.canBeLoaded() { throw RswiftResources.ValidationError("[R.swift] Font '\(font.name)' could not be loaded, is '\(font.filename)' added to the UIAppFonts array in this targets Info.plist?") }
+      }
+    }
+  }
+
+  /// This `_R.file` struct is generated, and contains static references to 5 resource files.
   struct file {
     let bundle: Foundation.Bundle
 
     /// Resource file `.swiftlint.yml`.
     var swiftlintYml: RswiftResources.FileResource { .init(name: ".swiftlint", pathExtension: "yml", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Pretendard-Bold.otf`.
+    var pretendardBoldOtf: RswiftResources.FileResource { .init(name: "Pretendard-Bold", pathExtension: "otf", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Pretendard-Medium.otf`.
+    var pretendardMediumOtf: RswiftResources.FileResource { .init(name: "Pretendard-Medium", pathExtension: "otf", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Pretendard-Regular.otf`.
+    var pretendardRegularOtf: RswiftResources.FileResource { .init(name: "Pretendard-Regular", pathExtension: "otf", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Pretendard-SemiBold.otf`.
+    var pretendardSemiBoldOtf: RswiftResources.FileResource { .init(name: "Pretendard-SemiBold", pathExtension: "otf", bundle: bundle, locale: LocaleReference.none) }
   }
 
   /// This `_R.storyboard` struct is generated, and contains static references to 1 storyboards.
