@@ -29,6 +29,10 @@
 		1FDFAB0C95431EDF89416E89 /* Pods_PawgleiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7B3A3B0B380F84DC58D72A /* Pods_PawgleiOS.framework */; };
 		BA2786712C576AE700009FC1 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2786702C576AE700009FC1 /* Color.xcassets */; };
 		BA2786732C576AF600009FC1 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2786722C576AF600009FC1 /* Image.xcassets */; };
+		BA2786792C577F0800009FC1 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA2786782C577BA300009FC1 /* Pretendard-Bold.otf */; };
+		BA27867A2C577F0800009FC1 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA2786752C577BA300009FC1 /* Pretendard-Medium.otf */; };
+		BA27867B2C577F0800009FC1 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA2786762C577BA300009FC1 /* Pretendard-Regular.otf */; };
+		BA27867C2C577F0800009FC1 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA2786772C577BA300009FC1 /* Pretendard-SemiBold.otf */; };
 		BA32FB102C4CC4880065798F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32FB0F2C4CC4880065798F /* AppDelegate.swift */; };
 		BA32FB122C4CC4880065798F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32FB112C4CC4880065798F /* SceneDelegate.swift */; };
 		BA32FB142C4CC4880065798F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32FB132C4CC4880065798F /* HomeViewController.swift */; };
@@ -62,6 +66,10 @@
 		AD140DDF21049CAD2358EF55 /* Pods-PawgleiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawgleiOS.debug.xcconfig"; path = "Target Support Files/Pods-PawgleiOS/Pods-PawgleiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BA2786702C576AE700009FC1 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		BA2786722C576AF600009FC1 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		BA2786752C577BA300009FC1 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		BA2786762C577BA300009FC1 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		BA2786772C577BA300009FC1 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		BA2786782C577BA300009FC1 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		BA32FB0C2C4CC4880065798F /* PawgleiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PawgleiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA32FB0F2C4CC4880065798F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA32FB112C4CC4880065798F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -185,11 +193,23 @@
 		BA27866F2C576AC700009FC1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BA2786742C577B3000009FC1 /* Fonts */,
 				BA32FB182C4CC4890065798F /* Assets.xcassets */,
 				BA2786702C576AE700009FC1 /* Color.xcassets */,
 				BA2786722C576AF600009FC1 /* Image.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		BA2786742C577B3000009FC1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BA2786782C577BA300009FC1 /* Pretendard-Bold.otf */,
+				BA2786752C577BA300009FC1 /* Pretendard-Medium.otf */,
+				BA2786762C577BA300009FC1 /* Pretendard-Regular.otf */,
+				BA2786772C577BA300009FC1 /* Pretendard-SemiBold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		BA32FB032C4CC4880065798F = {
@@ -299,6 +319,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA2786792C577F0800009FC1 /* Pretendard-Bold.otf in Resources */,
+				BA27867A2C577F0800009FC1 /* Pretendard-Medium.otf in Resources */,
+				BA27867B2C577F0800009FC1 /* Pretendard-Regular.otf in Resources */,
+				BA27867C2C577F0800009FC1 /* Pretendard-SemiBold.otf in Resources */,
 				BAAD88492C4CCADC00D2F467 /* .swiftlint.yml in Resources */,
 				BA2786712C576AE700009FC1 /* Color.xcassets in Resources */,
 				BA2786732C576AF600009FC1 /* Image.xcassets in Resources */,

@@ -15,6 +15,7 @@ struct _R {
   var color: color { .init(bundle: bundle) }
   var image: image { .init(bundle: bundle) }
   var info: info { .init(bundle: bundle) }
+  var font: font { .init(bundle: bundle) }
   var file: file { .init(bundle: bundle) }
   var storyboard: storyboard { .init(bundle: bundle) }
 
@@ -27,6 +28,9 @@ struct _R {
   func info(bundle: Foundation.Bundle) -> info {
     .init(bundle: bundle)
   }
+  func font(bundle: Foundation.Bundle) -> font {
+    .init(bundle: bundle)
+  }
   func file(bundle: Foundation.Bundle) -> file {
     .init(bundle: bundle)
   }
@@ -34,6 +38,7 @@ struct _R {
     .init(bundle: bundle)
   }
   func validate() throws {
+    try self.font.validate()
     try self.storyboard.validate()
   }
 
@@ -237,12 +242,50 @@ struct _R {
     }
   }
 
-  /// This `_R.file` struct is generated, and contains static references to 1 resource files.
+  /// This `_R.font` struct is generated, and contains static references to 4 fonts.
+  struct font: Sequence {
+    let bundle: Foundation.Bundle
+
+    /// Font `Pretendard-Bold`.
+    var pretendardBold: RswiftResources.FontResource { .init(name: "Pretendard-Bold", bundle: bundle, filename: "Pretendard-Bold.otf") }
+
+    /// Font `Pretendard-Medium`.
+    var pretendardMedium: RswiftResources.FontResource { .init(name: "Pretendard-Medium", bundle: bundle, filename: "Pretendard-Medium.otf") }
+
+    /// Font `Pretendard-Regular`.
+    var pretendardRegular: RswiftResources.FontResource { .init(name: "Pretendard-Regular", bundle: bundle, filename: "Pretendard-Regular.otf") }
+
+    /// Font `Pretendard-SemiBold`.
+    var pretendardSemiBold: RswiftResources.FontResource { .init(name: "Pretendard-SemiBold", bundle: bundle, filename: "Pretendard-SemiBold.otf") }
+
+    func makeIterator() -> IndexingIterator<[RswiftResources.FontResource]> {
+      [pretendardBold, pretendardMedium, pretendardRegular, pretendardSemiBold].makeIterator()
+    }
+    func validate() throws {
+      for font in self {
+        if !font.canBeLoaded() { throw RswiftResources.ValidationError("[R.swift] Font '\(font.name)' could not be loaded, is '\(font.filename)' added to the UIAppFonts array in this targets Info.plist?") }
+      }
+    }
+  }
+
+  /// This `_R.file` struct is generated, and contains static references to 5 resource files.
   struct file {
     let bundle: Foundation.Bundle
 
     /// Resource file `.swiftlint.yml`.
     var swiftlintYml: RswiftResources.FileResource { .init(name: ".swiftlint", pathExtension: "yml", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Pretendard-Bold.otf`.
+    var pretendardBoldOtf: RswiftResources.FileResource { .init(name: "Pretendard-Bold", pathExtension: "otf", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Pretendard-Medium.otf`.
+    var pretendardMediumOtf: RswiftResources.FileResource { .init(name: "Pretendard-Medium", pathExtension: "otf", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Pretendard-Regular.otf`.
+    var pretendardRegularOtf: RswiftResources.FileResource { .init(name: "Pretendard-Regular", pathExtension: "otf", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Pretendard-SemiBold.otf`.
+    var pretendardSemiBoldOtf: RswiftResources.FileResource { .init(name: "Pretendard-SemiBold", pathExtension: "otf", bundle: bundle, locale: LocaleReference.none) }
   }
 
   /// This `_R.storyboard` struct is generated, and contains static references to 1 storyboards.
