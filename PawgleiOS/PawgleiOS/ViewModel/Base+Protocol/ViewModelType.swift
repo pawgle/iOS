@@ -7,4 +7,7 @@
 
 import RxSwift
 
-typealias ViewModelType = ViewModelCoordinatable & InputOutputAttachable
+protocol ViewModelType: InputOutputAttachable,
+                        ViewModelCoordinatable {
+    var disposeBag: DisposeBag { get set }
+}
