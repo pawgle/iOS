@@ -9,11 +9,11 @@ import UIKit
 import RxSwift
 import RxRelay
 
-final class HomeViewController: UIViewController,
+final class MatchingHomeViewController: UIViewController,
                                 ViewModelBindable {
   
-    typealias ViewModelType = HomeViewModel
-    var viewModel: HomeViewModel!
+    typealias ViewModelType = MatchingHomeViewModel
+    var viewModel: MatchingHomeViewModel!
     var disposeBag = DisposeBag()
     
     private var imageView: UIImageView = {
@@ -33,28 +33,28 @@ final class HomeViewController: UIViewController,
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red200
-        view.addSubview(imageView)
-        view.addSubview(label)
+//        view.addSubview(imageView)
+//        view.addSubview(label)
         
         print("\(self) - \(#function)")
     }
     
-    override func viewDidLayoutSubviews() {
-        imageView.frame = CGRect(
-            x: (view.frame.size.width - 24) / 2,
-            y: (view.frame.size.height - 24) / 2,
-            width: 24,
-            height: 24)
-        
-        let labelWidth: CGFloat = 200
-        let labelHeight: CGFloat = 50
-        label.frame = CGRect(
-            x: (view.frame.size.width - labelWidth) / 2,
-            y: view.frame.size.height - labelHeight - 100,
-            width: labelWidth,
-            height: labelHeight
-        )
-    }
+//    override func viewDidLayoutSubviews() {
+//        imageView.frame = CGRect(
+//            x: (view.frame.size.width - 24) / 2,
+//            y: (view.frame.size.height - 24) / 2,
+//            width: 24,
+//            height: 24)
+//        
+//        let labelWidth: CGFloat = 200
+//        let labelHeight: CGFloat = 50
+//        label.frame = CGRect(
+//            x: (view.frame.size.width - labelWidth) / 2,
+//            y: view.frame.size.height - labelHeight - 100,
+//            width: labelWidth,
+//            height: labelHeight
+//        )
+//    }
     
     func bindViewModel() {
         

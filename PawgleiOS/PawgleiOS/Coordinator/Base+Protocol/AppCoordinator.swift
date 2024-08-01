@@ -19,6 +19,10 @@ final class AppCoordinator: ReactiveCoordinator<Void>,
     
     var window: UIWindow!
     
+    private override init(navigationController: UINavigationController) {
+        super.init(navigationController: navigationController)
+    }
+    
     func start(window: UIWindow) {
         self.window = window
         self.window.rootViewController = navigationController
@@ -45,11 +49,12 @@ final class AppCoordinator: ReactiveCoordinator<Void>,
 private extension AppCoordinator {
     func coordinateToSplash() -> Observable<SplashCoordinatorResult> {
         let coordinator = SplashCoordinator(navigationController: navigationController)
-        return self.coordinate(to: coordinator, type: .push, animated: true)
+        return self.coordinate(to: coordinator, type: .push, animated: false)
     }
     
     func coordinateToHome() -> Observable<Void> {
-        let coordinator = HomeCoordinator(navigationController: navigationController)
+        let coordinator = MainTabBarCoordinator(navigationController: navigationController)
+//        let coordinator = HomeCoordinator(navigationController: navigationController)
         return self.coordinate(to: coordinator, type: .push, animated: false)
     }
 }

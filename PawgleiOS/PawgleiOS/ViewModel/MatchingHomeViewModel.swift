@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RxRelay
 
-final class HomeViewModel: ViewModelType {
+final class MatchingHomeViewModel: ViewModelType {
     
     struct Input: DefaultInput {
         var fetchData: PublishRelay<Void>
@@ -28,6 +28,8 @@ final class HomeViewModel: ViewModelType {
     lazy var output: Output = transform(input)
     
     lazy var coordinate: Coordinate = Coordinate(close: PublishRelay<Void>())
+    
+    var disposeBag: DisposeBag = DisposeBag()
     
     func transform(_ input: Input) -> Output {
         

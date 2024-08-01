@@ -8,20 +8,18 @@
 import Foundation
 import RxSwift
 
-final class HomeCoordinator: ReactiveCoordinator<Void>,
+final class MatchingHomeCoordinator: ReactiveCoordinator<Void>,
                              CoordinatorTransitable {
     
     override func start(_ type: CoordinatorTransitionType) -> Observable<Void> {
         
-        let viewModel = HomeViewModel()
-        let viewController = HomeViewController(viewModel: viewModel)
+        let viewModel = MatchingHomeViewModel()
+        let viewController = MatchingHomeViewController(viewModel: viewModel)
         
         self.transition(to: viewController,
                         navigationController: navigationController,
                         type: .push,
                         animated: false)
-        
-        AppCoordinator.shared.viewController = viewController
         
         return Observable.empty()
     }
