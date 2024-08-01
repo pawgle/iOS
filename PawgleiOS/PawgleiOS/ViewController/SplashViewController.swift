@@ -17,13 +17,30 @@ final class SplashViewController: UIViewController,
     var viewModel: SplashViewModel!
     var disposeBag: DisposeBag = DisposeBag()
     
+    private let label: UILabel = {
+        let label = UILabel(text: "Splash VC")
+        label.textAlignment = .center
+        label.font = .systemFont(ofSize: 18)
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureUI()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.viewModel.input.fetchData.accept(())
+        }
+    }
+    
+    private func configureUI() {
         self.view.backgroundColor = .green
         
-        self.viewModel.input.fetchData.accept(())
-        
-        print("\(self) - \(#function)")
+        view.addSubview(label)
+        label.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.size.equalTo(200)
+        }
     }
     
     func bindViewModel() {
