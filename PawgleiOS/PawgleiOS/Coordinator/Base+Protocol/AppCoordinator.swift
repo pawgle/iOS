@@ -10,7 +10,7 @@ import RxSwift
 import UIKit
 
 final class AppCoordinator: ReactiveCoordinator<Void>,
-                      CoordinatorTransitable {
+                            CoordinatorTransitable {
     
     static let shared = AppCoordinator(navigationController: UINavigationController())
     
@@ -21,6 +21,7 @@ final class AppCoordinator: ReactiveCoordinator<Void>,
     
     private override init(navigationController: UINavigationController) {
         super.init(navigationController: navigationController)
+        self.navigationController.setNavigationBarHidden(true, animated: false)
     }
     
     func start(window: UIWindow) {
@@ -54,7 +55,6 @@ private extension AppCoordinator {
     
     func coordinateToHome() -> Observable<Void> {
         let coordinator = MainTabBarCoordinator(navigationController: navigationController)
-//        let coordinator = HomeCoordinator(navigationController: navigationController)
         return self.coordinate(to: coordinator, type: .push, animated: false)
     }
 }
