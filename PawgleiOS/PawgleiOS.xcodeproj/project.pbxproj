@@ -26,7 +26,6 @@
 		129DF2492C551D7000F0ED34 /* ViewModelBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DF2482C551D7000F0ED34 /* ViewModelBindable.swift */; };
 		129DF24C2C5613B500F0ED34 /* MatchingHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DF24B2C5613B500F0ED34 /* MatchingHomeCoordinator.swift */; };
 		129DF24E2C5613DA00F0ED34 /* MatchingHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DF24D2C5613DA00F0ED34 /* MatchingHomeViewModel.swift */; };
-		129DF2562C5767B100F0ED34 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DF2552C5767B100F0ED34 /* UIScreen+Extensions.swift */; };
 		129DF2582C57695C00F0ED34 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DF2572C57695C00F0ED34 /* UILabel+Extensions.swift */; };
 		129DF2602C58FBCD00F0ED34 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DF25F2C58FBCD00F0ED34 /* MainTabBarController.swift */; };
 		129DF2632C5A709200F0ED34 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DF2622C5A709200F0ED34 /* MainTabBarCoordinator.swift */; };
@@ -71,7 +70,6 @@
 		129DF2482C551D7000F0ED34 /* ViewModelBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBindable.swift; sourceTree = "<group>"; };
 		129DF24B2C5613B500F0ED34 /* MatchingHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingHomeCoordinator.swift; sourceTree = "<group>"; };
 		129DF24D2C5613DA00F0ED34 /* MatchingHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingHomeViewModel.swift; sourceTree = "<group>"; };
-		129DF2552C5767B100F0ED34 /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
 		129DF2572C57695C00F0ED34 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		129DF25F2C58FBCD00F0ED34 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		129DF2622C5A709200F0ED34 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
@@ -216,7 +214,6 @@
 		129DF2542C5767A100F0ED34 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				129DF2552C5767B100F0ED34 /* UIScreen+Extensions.swift */,
 				129DF2572C57695C00F0ED34 /* UILabel+Extensions.swift */,
 			);
 			path = Extensions;
@@ -494,7 +491,6 @@
 				BA32FB122C4CC4880065798F /* SceneDelegate.swift in Sources */,
 				129DF20E2C50C56100F0ED34 /* RepositoryType.swift in Sources */,
 				129DF2632C5A709200F0ED34 /* MainTabBarCoordinator.swift in Sources */,
-				129DF2562C5767B100F0ED34 /* UIScreen+Extensions.swift in Sources */,
 				129DF26D2C5A799C00F0ED34 /* FavorCoordinator.swift in Sources */,
 				129DF26B2C5A773C00F0ED34 /* FavorViewController.swift in Sources */,
 				129DF2402C5512C100F0ED34 /* AuthUsecase.swift in Sources */,

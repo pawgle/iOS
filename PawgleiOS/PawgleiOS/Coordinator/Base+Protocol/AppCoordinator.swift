@@ -19,6 +19,10 @@ final class AppCoordinator: ReactiveCoordinator<Void>,
     
     var window: UIWindow!
     
+    private override init(navigationController: UINavigationController) {
+        super.init(navigationController: navigationController)
+    }
+    
     func start(window: UIWindow) {
         self.window = window
         self.window.rootViewController = navigationController
