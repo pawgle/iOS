@@ -16,13 +16,20 @@ class CustomModalView: UIView {
     var isVisibleRelay: BehaviorRelay<Bool>
     var contentView: UIView
     var contentViewSize: CGSize
+    var shouldDismissOnBackgroundTap: Bool
     
     private let disposeBag = DisposeBag()
     
-    init(contentView: UIView, contentViewSize: CGSize, isVisibleRelay: BehaviorRelay<Bool>) {
+    init(
+        contentView: UIView,
+        contentViewSize: CGSize,
+        isVisibleRelay: BehaviorRelay<Bool>,
+        shouldDismissOnBackgroundTap: Bool = false
+    ) {
         self.contentView = contentView
         self.isVisibleRelay = isVisibleRelay
         self.contentViewSize = contentViewSize
+        self.shouldDismissOnBackgroundTap = shouldDismissOnBackgroundTap
         super.init(frame: .zero)
         setupDimmingView()
         setupContentView()
@@ -34,10 +41,12 @@ class CustomModalView: UIView {
         dimmingView.backgroundColor = UIColor.black.withAlphaComponent(0.1)
         dimmingView.frame = UIScreen.main.bounds
                 
-        let tapGesture = UITapGestureRecognizer()
-        tapGesture.addTarget(self, action: #selector(hideModal))
-        tapGesture.delegate = self
-        dimmingView.addGestureRecognizer(tapGesture)
+        if shouldDismissOnBackgroundTap {
+            let tapGesture = UITapGestureRecognizer()
+            tapGesture.addTarget(self, action: #selector(hideModal))
+            tapGesture.delegate = self
+            dimmingView.addGestureRecognizer(tapGesture)
+        }
     }
     
     private func setupContentView() {
