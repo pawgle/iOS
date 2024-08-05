@@ -46,6 +46,8 @@
 		BA32FB142C4CC4880065798F /* MatchingHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32FB132C4CC4880065798F /* MatchingHomeViewController.swift */; };
 		BA32FB192C4CC4890065798F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA32FB182C4CC4890065798F /* Assets.xcassets */; };
 		BA32FB1C2C4CC4890065798F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA32FB1A2C4CC4890065798F /* LaunchScreen.storyboard */; };
+		BA8EEF4D2C60601D00FE6ABF /* BlurableProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF4C2C60601D00FE6ABF /* BlurableProfileCollectionViewCell.swift */; };
+		BA8EEF522C608F1400FE6ABF /* BlurableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF512C608F1400FE6ABF /* BlurableImageView.swift */; };
 		BAAD88492C4CCADC00D2F467 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BAAD88482C4CCADC00D2F467 /* .swiftlint.yml */; };
 		BAAD884C2C4CCBE600D2F467 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD884B2C4CCBE600D2F467 /* R.generated.swift */; };
 /* End PBXBuildFile section */
@@ -93,6 +95,8 @@
 		BA32FB182C4CC4890065798F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA32FB1B2C4CC4890065798F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA32FB1D2C4CC4890065798F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA8EEF4C2C60601D00FE6ABF /* BlurableProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurableProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA8EEF512C608F1400FE6ABF /* BlurableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurableImageView.swift; sourceTree = "<group>"; };
 		BAAD88482C4CCADC00D2F467 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		BAAD884B2C4CCBE600D2F467 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		FC7B3A3B0B380F84DC58D72A /* Pods_PawgleiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawgleiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,14 +207,6 @@
 			path = "Base+Protocol";
 			sourceTree = "<group>";
 		};
-		129DF2502C5766D700F0ED34 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
-			path = PawgleiOS/View;
-			sourceTree = SOURCE_ROOT;
-		};
 		129DF2542C5767A100F0ED34 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +218,7 @@
 		129DF2662C5A73B100F0ED34 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				BA8EEF502C608F0400FE6ABF /* View */,
 				129DF2672C5A73BC00F0ED34 /* Controller */,
 			);
 			path = Component;
@@ -293,8 +290,8 @@
 				129DF2542C5767A100F0ED34 /* Extensions */,
 				129DF23E2C5512B800F0ED34 /* Domain */,
 				129DF20C2C50C55800F0ED34 /* Repository */,
-				129DF2502C5766D700F0ED34 /* View */,
 				129DF2112C50CDF200F0ED34 /* Coordinator */,
+				BA8EEF4A2C605E3300FE6ABF /* View */,
 				129DF2092C50C53E00F0ED34 /* ViewModel */,
 				129DF2352C55114A00F0ED34 /* ViewController */,
 				BA27866F2C576AC700009FC1 /* Resources */,
@@ -304,6 +301,30 @@
 				BA32FB1D2C4CC4890065798F /* Info.plist */,
 			);
 			path = PawgleiOS;
+			sourceTree = "<group>";
+		};
+		BA8EEF4A2C605E3300FE6ABF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA8EEF4B2C605E4A00FE6ABF /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA8EEF4B2C605E4A00FE6ABF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BA8EEF4C2C60601D00FE6ABF /* BlurableProfileCollectionViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BA8EEF502C608F0400FE6ABF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA8EEF512C608F1400FE6ABF /* BlurableImageView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E088141C11B40A7086BEFA2A /* Frameworks */ = {
@@ -480,12 +501,14 @@
 				129DF2602C58FBCD00F0ED34 /* MainTabBarController.swift in Sources */,
 				129DF2292C54FFD900F0ED34 /* CoordinatorForwardable.swift in Sources */,
 				BA32FB142C4CC4880065798F /* MatchingHomeViewController.swift in Sources */,
+				BA8EEF522C608F1400FE6ABF /* BlurableImageView.swift in Sources */,
 				129DF2272C54FFC100F0ED34 /* ReactiveCoordinator.swift in Sources */,
 				129DF2492C551D7000F0ED34 /* ViewModelBindable.swift in Sources */,
 				129DF22B2C55008400F0ED34 /* CoordinatorTransitionType.swift in Sources */,
 				129DF24E2C5613DA00F0ED34 /* MatchingHomeViewModel.swift in Sources */,
 				129DF2442C5518A100F0ED34 /* InputOutputAttachable.swift in Sources */,
 				129DF2652C5A70B700F0ED34 /* MainTabBarViewModel.swift in Sources */,
+				BA8EEF4D2C60601D00FE6ABF /* BlurableProfileCollectionViewCell.swift in Sources */,
 				BA32FB102C4CC4880065798F /* AppDelegate.swift in Sources */,
 				129DF2422C55176000F0ED34 /* ViewModelCoordinatable.swift in Sources */,
 				BA32FB122C4CC4880065798F /* SceneDelegate.swift in Sources */,
