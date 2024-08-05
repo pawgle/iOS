@@ -18,7 +18,7 @@ class PopularKeywordMatchingCollectionViewCell: UICollectionViewCell {
         return sv
     }()
     
-    private var petLabelView: UILabel = {
+    private var iconLabel: UILabel = {
         let label = UILabel()
         return label
     }()
@@ -57,7 +57,7 @@ class PopularKeywordMatchingCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupContainerView()
-        setupPetLabelView()
+        setupIconLabel()
         setupLabelView()
         setupMatchButton()
     }
@@ -72,10 +72,10 @@ class PopularKeywordMatchingCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    private func setupPetLabelView() {
-        containerView.addArrangedSubview(petLabelView)
-        petLabelView.font = .systemFont(ofSize: 28)
-        petLabelView.textAlignment = .center
+    private func setupIconLabel() {
+        containerView.addArrangedSubview(iconLabel)
+        iconLabel.font = .systemFont(ofSize: 28)
+        iconLabel.textAlignment = .center
     }
     
     private func setupLabelView() {
@@ -103,12 +103,12 @@ class PopularKeywordMatchingCollectionViewCell: UICollectionViewCell {
     
     // TODO: API 연동 결과에 따른 뷰 프로퍼티 세팅
     func configure() {
-        petLabelView.text = "🏠"
+        iconLabel.text = "🏠"
         titleLabel.text = "같은 지역"
         subtitleLabel.text = "BEST!"
     }
     
     required init(coder: NSCoder) {
-        fatalError("fail to initialize \(PetchingCollectionViewCell.identifier)")
+        fatalError("fail to initialize \(PopularKeywordMatchingCollectionViewCell.identifier)")
     }
 }
