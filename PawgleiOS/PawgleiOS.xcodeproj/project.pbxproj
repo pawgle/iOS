@@ -48,6 +48,8 @@
 		BA32FB1C2C4CC4890065798F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA32FB1A2C4CC4890065798F /* LaunchScreen.storyboard */; };
 		BA8EEF4D2C60601D00FE6ABF /* BlurableProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF4C2C60601D00FE6ABF /* BlurableProfileCollectionViewCell.swift */; };
 		BA8EEF522C608F1400FE6ABF /* BlurableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF512C608F1400FE6ABF /* BlurableImageView.swift */; };
+		BA8EEF562C60A13C00FE6ABF /* PetchingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF552C60A13C00FE6ABF /* PetchingCollectionViewCell.swift */; };
+		BA8EEF592C60A2E000FE6ABF /* PawglePlainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF582C60A2E000FE6ABF /* PawglePlainButton.swift */; };
 		BAAD88492C4CCADC00D2F467 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BAAD88482C4CCADC00D2F467 /* .swiftlint.yml */; };
 		BAAD884C2C4CCBE600D2F467 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD884B2C4CCBE600D2F467 /* R.generated.swift */; };
 /* End PBXBuildFile section */
@@ -97,6 +99,8 @@
 		BA32FB1D2C4CC4890065798F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA8EEF4C2C60601D00FE6ABF /* BlurableProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurableProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		BA8EEF512C608F1400FE6ABF /* BlurableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurableImageView.swift; sourceTree = "<group>"; };
+		BA8EEF552C60A13C00FE6ABF /* PetchingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetchingCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA8EEF582C60A2E000FE6ABF /* PawglePlainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawglePlainButton.swift; sourceTree = "<group>"; };
 		BAAD88482C4CCADC00D2F467 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		BAAD884B2C4CCBE600D2F467 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		FC7B3A3B0B380F84DC58D72A /* Pods_PawgleiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawgleiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,6 +222,7 @@
 		129DF2662C5A73B100F0ED34 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				BA8EEF572C60A2B900FE6ABF /* Button */,
 				BA8EEF502C608F0400FE6ABF /* View */,
 				129DF2672C5A73BC00F0ED34 /* Controller */,
 			);
@@ -315,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				BA8EEF4C2C60601D00FE6ABF /* BlurableProfileCollectionViewCell.swift */,
+				BA8EEF552C60A13C00FE6ABF /* PetchingCollectionViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -325,6 +331,14 @@
 				BA8EEF512C608F1400FE6ABF /* BlurableImageView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BA8EEF572C60A2B900FE6ABF /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				BA8EEF582C60A2E000FE6ABF /* PawglePlainButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		E088141C11B40A7086BEFA2A /* Frameworks */ = {
@@ -505,6 +519,7 @@
 				129DF2272C54FFC100F0ED34 /* ReactiveCoordinator.swift in Sources */,
 				129DF2492C551D7000F0ED34 /* ViewModelBindable.swift in Sources */,
 				129DF22B2C55008400F0ED34 /* CoordinatorTransitionType.swift in Sources */,
+				BA8EEF562C60A13C00FE6ABF /* PetchingCollectionViewCell.swift in Sources */,
 				129DF24E2C5613DA00F0ED34 /* MatchingHomeViewModel.swift in Sources */,
 				129DF2442C5518A100F0ED34 /* InputOutputAttachable.swift in Sources */,
 				129DF2652C5A70B700F0ED34 /* MainTabBarViewModel.swift in Sources */,
@@ -530,6 +545,7 @@
 				129DF2132C50CE0400F0ED34 /* BaseCoordinator.swift in Sources */,
 				129DF26F2C5A806B00F0ED34 /* FavorViewModel.swift in Sources */,
 				129DF2692C5A73C900F0ED34 /* PawgleNavigationController.swift in Sources */,
+				BA8EEF592C60A2E000FE6ABF /* PawglePlainButton.swift in Sources */,
 				129DF24C2C5613B500F0ED34 /* MatchingHomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

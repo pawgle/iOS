@@ -11,7 +11,7 @@ import Kingfisher
 
 final class BlurableProfileCollectionViewCell: UICollectionViewCell {
     
-    static let identifier = "BlurProfileCardCollectionViewCell"
+    static let identifier = "BlurableProfileCollectionViewCell"
 
     private let containerView: UIStackView = {
         let sv = UIStackView()
@@ -63,7 +63,7 @@ final class BlurableProfileCollectionViewCell: UICollectionViewCell {
         button.setTitle("펫 프로필", for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.titleLabel?.font = R.font.pretendardMedium(size: 12)
-        button.backgroundColor = .gray100
+        button.backgroundColor = .gray800
         button.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 2)
         button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 2, bottom: 0, right: 0)
         return button
