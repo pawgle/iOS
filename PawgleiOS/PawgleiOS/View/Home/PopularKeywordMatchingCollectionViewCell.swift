@@ -7,9 +7,7 @@
 
 import UIKit
 
-class PopularKeywordMatchingCollectionViewCell: UICollectionViewCell {
-    
-    static let identifier = "PopularKeywordMatchingCollectionViewCell"
+class PopularKeywordMatchingCollectionViewCell: UICollectionViewCell, ReusableCell {
     
     private var containerView: UIStackView = {
         let sv = UIStackView()
@@ -109,6 +107,6 @@ class PopularKeywordMatchingCollectionViewCell: UICollectionViewCell {
     }
     
     required init(coder: NSCoder) {
-        fatalError("fail to initialize \(PopularKeywordMatchingCollectionViewCell.identifier)")
+        fatalError("fail to initialize PopularKeywordMatchingCollectionViewCell")
     }
 }

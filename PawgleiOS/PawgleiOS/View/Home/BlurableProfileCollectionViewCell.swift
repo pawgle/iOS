@@ -9,10 +9,8 @@ import UIKit
 import SnapKit
 import Kingfisher
 
-final class BlurableProfileCollectionViewCell: UICollectionViewCell {
+final class BlurableProfileCollectionViewCell: UICollectionViewCell, ReusableCell {
     
-    static let identifier = "BlurableProfileCollectionViewCell"
-
     private let containerView: UIStackView = {
         let sv = UIStackView()
         sv.axis = .vertical
@@ -132,7 +130,7 @@ final class BlurableProfileCollectionViewCell: UICollectionViewCell {
     }
     
     required init(coder: NSCoder) {
-        fatalError("fail to initialize \(BlurableProfileCollectionViewCell.identifier)")
+        fatalError("fail to initialize BlurableProfileCollectionViewCell")
     }
     
     // TODO: API 연동 결과에 따른 뷰 프로퍼티 세팅

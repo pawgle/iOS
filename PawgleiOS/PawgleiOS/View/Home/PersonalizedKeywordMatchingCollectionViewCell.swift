@@ -7,9 +7,7 @@
 
 import UIKit
 
-class PersonalizedKeywordMatchingCollectionViewCell: UICollectionViewCell {
-    
-    static let identifier = "PersonalizedKeywordMatchingCollectionViewCell"
+class PersonalizedKeywordMatchingCollectionViewCell: UICollectionViewCell, ReusableCell {
     
     private var iconLabel: UILabel = {
         let label = UILabel()
@@ -91,6 +89,6 @@ class PersonalizedKeywordMatchingCollectionViewCell: UICollectionViewCell {
     }
     
     required init(coder: NSCoder) {
-        fatalError("fail to initialize \(PersonalizedKeywordMatchingCollectionViewCell.identifier)")
+        fatalError("fail to initialize PersonalizedKeywordMatchingCollectionViewCell")
     }
 }

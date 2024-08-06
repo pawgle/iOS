@@ -10,53 +10,56 @@ import RxSwift
 import RxRelay
 
 final class MatchingHomeViewController: UIViewController,
-                                ViewModelBindable {
-  
+                                        ViewModelBindable {
+    
     typealias ViewModelType = MatchingHomeViewModel
     var viewModel: MatchingHomeViewModel!
     var disposeBag = DisposeBag()
     
-    private var imageView: UIImageView = {
-        let iv = UIImageView()
-        iv.image = R.image.award()
-        return iv
-    }()
-    
-    private var label: UILabel = {
-        let label = UILabel()
-        label.text = "테스트 레이블"
-        label.textAlignment = .center
-        label.font = R.font.pretendardMedium(size: 32)
-        return label
+    private lazy var cv: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        layout.itemSize = CGSize(width: UIScreen.main.bounds.width - 10, height: 70)
+        layout.minimumLineSpacing = 20
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cv.showsHorizontalScrollIndicator = false
+        cv.register(PersonalizedKeywordMatchingCollectionViewCell.self)
+        return cv
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red200
-//        view.addSubview(imageView)
-//        view.addSubview(label)
-        
         print("\(self) - \(#function)")
+        view.backgroundColor = .gray100
+        setupCV()
     }
     
-//    override func viewDidLayoutSubviews() {
-//        imageView.frame = CGRect(
-//            x: (view.frame.size.width - 24) / 2,
-//            y: (view.frame.size.height - 24) / 2,
-//            width: 24,
-//            height: 24)
-//        
-//        let labelWidth: CGFloat = 200
-//        let labelHeight: CGFloat = 50
-//        label.frame = CGRect(
-//            x: (view.frame.size.width - labelWidth) / 2,
-//            y: view.frame.size.height - labelHeight - 100,
-//            width: labelWidth,
-//            height: labelHeight
-//        )
-//    }
+    private func setupCV() {
+        view.addSubview(cv)
+        cv.backgroundColor = .gray100
+        cv.snp.makeConstraints { make in
+            make.horizontalEdges.equalToSuperview()
+            make.top.equalTo(view.safeAreaLayoutGuide)
+            make.height.equalTo(400)
+        }
+        cv.dataSource = self
+        cv.delegate = self
+    }
     
     func bindViewModel() {
         
+    }
+}
+
+extension MatchingHomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(for: PersonalizedKeywordMatchingCollectionViewCell.self, at: indexPath)
+        cell.configure()
+        return cell
     }
 }

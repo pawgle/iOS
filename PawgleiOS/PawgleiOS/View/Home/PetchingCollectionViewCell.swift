@@ -8,9 +8,7 @@
 import UIKit
 import SnapKit
 
-class PetchingCollectionViewCell: UICollectionViewCell {
-    
-    static let identifier = "PetchingCollectionViewCell"
+class PetchingCollectionViewCell: UICollectionViewCell, ReusableCell {
     
     private var containerView: UIStackView = {
         let sv = UIStackView()
@@ -110,6 +108,6 @@ class PetchingCollectionViewCell: UICollectionViewCell {
     }
     
     required init(coder: NSCoder) {
-        fatalError("fail to initialize \(PetchingCollectionViewCell.identifier)")
+        fatalError("fail to initialize PetchingCollectionViewCell")
     }
 }
