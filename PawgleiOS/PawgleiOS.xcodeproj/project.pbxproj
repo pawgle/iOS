@@ -54,6 +54,8 @@
 		BA8EEF5D2C60B5B200FE6ABF /* PersonalizedKeywordMatchingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF5C2C60B5B200FE6ABF /* PersonalizedKeywordMatchingCollectionViewCell.swift */; };
 		BA8EEF6D2C62E6F400FE6ABF /* UIColletionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF6C2C62E6F400FE6ABF /* UIColletionView+Extension.swift */; };
 		BA8EEF702C62E86400FE6ABF /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF6F2C62E86400FE6ABF /* ReusableCell.swift */; };
+		BA8EEF492C5E214100FE6ABF /* CustomModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF482C5E214100FE6ABF /* CustomModalView.swift */; };
+		BA8EEF542C60934600FE6ABF /* UIViewController+Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8EEF532C60934600FE6ABF /* UIViewController+Modal.swift */; };
 		BAAD88492C4CCADC00D2F467 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BAAD88482C4CCADC00D2F467 /* .swiftlint.yml */; };
 		BAAD884C2C4CCBE600D2F467 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD884B2C4CCBE600D2F467 /* R.generated.swift */; };
 /* End PBXBuildFile section */
@@ -109,6 +111,8 @@
 		BA8EEF5C2C60B5B200FE6ABF /* PersonalizedKeywordMatchingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizedKeywordMatchingCollectionViewCell.swift; sourceTree = "<group>"; };
 		BA8EEF6C2C62E6F400FE6ABF /* UIColletionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColletionView+Extension.swift"; sourceTree = "<group>"; };
 		BA8EEF6F2C62E86400FE6ABF /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		BA8EEF482C5E214100FE6ABF /* CustomModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModalView.swift; sourceTree = "<group>"; };
+		BA8EEF532C60934600FE6ABF /* UIViewController+Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Modal.swift"; sourceTree = "<group>"; };
 		BAAD88482C4CCADC00D2F467 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		BAAD884B2C4CCBE600D2F467 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		FC7B3A3B0B380F84DC58D72A /* Pods_PawgleiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawgleiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +228,7 @@
 			children = (
 				129DF2572C57695C00F0ED34 /* UILabel+Extension.swift */,
 				BA8EEF6C2C62E6F400FE6ABF /* UIColletionView+Extension.swift */,
+				BA8EEF532C60934600FE6ABF /* UIViewController+Modal.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 			children = (
 				BA8EEF572C60A2B900FE6ABF /* Button */,
 				BA8EEF502C608F0400FE6ABF /* View */,
+				BA8EEF472C5E213400FE6ABF /* Modal */,
 				129DF2672C5A73BC00F0ED34 /* Controller */,
 			);
 			path = Component;
@@ -359,6 +365,13 @@
 				BA8EEF6F2C62E86400FE6ABF /* ReusableCell.swift */,
 			);
 			path = Utils;
+        };
+		BA8EEF472C5E213400FE6ABF /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				BA8EEF482C5E214100FE6ABF /* CustomModalView.swift */,
+			);
+			path = Modal;
 			sourceTree = "<group>";
 		};
 		E088141C11B40A7086BEFA2A /* Frameworks */ = {
@@ -555,6 +568,7 @@
 				129DF23A2C55118700F0ED34 /* SplashViewModel.swift in Sources */,
 				129DF2102C50C68400F0ED34 /* ViewModelStatus.swift in Sources */,
 				129DF2582C57695C00F0ED34 /* UILabel+Extension.swift in Sources */,
+				BA8EEF492C5E214100FE6ABF /* CustomModalView.swift in Sources */,
 				129DF20B2C50C54700F0ED34 /* ViewModelType.swift in Sources */,
 				129DF2372C55115A00F0ED34 /* SplashViewController.swift in Sources */,
 				129DF2252C54FFAB00F0ED34 /* AppCoordinator.swift in Sources */,
@@ -565,6 +579,7 @@
 				BA8EEF6D2C62E6F400FE6ABF /* UIColletionView+Extension.swift in Sources */,
 				129DF22D2C5502B800F0ED34 /* CoordinatorTransitable.swift in Sources */,
 				129DF23D2C5511DF00F0ED34 /* AuthRepository.swift in Sources */,
+				BA8EEF542C60934600FE6ABF /* UIViewController+Modal.swift in Sources */,
 				129DF2132C50CE0400F0ED34 /* BaseCoordinator.swift in Sources */,
 				129DF26F2C5A806B00F0ED34 /* FavorViewModel.swift in Sources */,
 				129DF2692C5A73C900F0ED34 /* PawgleNavigationController.swift in Sources */,
